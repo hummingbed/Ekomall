@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eko Mall</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+  <body>
+    <nav class="navbar fixed-top navbar-light bg-primary">
+      <a class="navbar-brand" href="index.html"><h2>Eko Mall</h2></a>
+        <input class="form-control" type="search" placeholder="Search product" style="width: 50%;" aria-label="Search">
+        <button class="btn btn-success bg-success" type="submit">Search</button>
+        <div class="my-2 mr-sm-0"> 
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+            <button class="clear-cart btn btn-success">Clear Cart</button>
+        </div>
+    </nav>
+    <div class="container">
+      <div class="row justify-content-md-center">
+          <div class="col-sm">
+              <div class="card">
+                  <img class="card-img-top" src="images/one.png" alt="Card image cap">
+                  <div class="card-block bg-info">
+                    <h4 class="card-title">Samsung</h4>
+                    <p class="card-text">Price: ₦120,000</p>
+                    <a href="#" data-name="Samsung" data-price="120000" class="add-to-cart btn btn-primary">Add to cart</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm">
+              <div class="card">
+                  <img class="card-img-top" src="images/xr-blue.png" alt="Card image cap">
+                  <div class="card-block bg-info">
+                      <h4 class="card-title">Tecno</h4>
+                      <p class="card-text">Price: ₦75000</p>
+                      <a href="#" data-name="Tecno" data-price="75000" class="add-to-cart btn btn-primary">Add to cart</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+                <img class="card-img-top" src="images/xr-coral.png" alt="Card image cap">
+                <div class="card-block bg-info">
+                    <h4 class="card-title">Infinix</h4>
+                    <p class="card-text">Price: 95000</p>
+                    <a href="#" data-name="Infinix" data-price="95000" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+          <div class="col-sm">
+              <div class="card">
+                  <img class="card-img-top" src="images/xr-yellow.png" alt="Card image cap">
+                  <div class="card-block bg-info">
+                      <h4 class="card-title">Iphone</h4>
+                      <p class="card-text">Price: 365000</p>
+                      <a href="#" data-name="Iphone" data-price="365000" class="add-to-cart btn btn-primary">Add to cart</a>
+                  </div>
+              </div>
+          </div>
+      </div>     
+    </div>
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <table class="show-cart table" ></table>                     
+                  <div>Total price: ₦<span class="total-cart"></span></div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#card">Pay now</button>
+              </div>           
+          </div>
+      </div>
+  </div>
+  <footer class="page-footer font-small blue pt-4 bg-dark text-white">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+                <h5 class="text-uppercase text-white">About</h5>
+                <p class="text-white">Eko Mall is your number one online shopping site in Nigeria where you can purchase all kinds of mobile phones. You can have them delivered directly to you. Shop online with great ease as you pay with Eko Mall Pay which guarantees you the safest online shopping payment method, allowing you to make stress free payments. Whatever it is you wish to buy, Eko Mall offers you all and lots more at prices which you can trust.
+                </p>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-3 mb-md-0 mb-3">
+              <h5 class="text-uppercase text-white">Let us help you</h5>
+              <ul class="list-unstyled">
+                  <li>
+                    <a href="#!" class="text-white">How to shop on Eko-Mall</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white">Contact Us</a>
+                  </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase text-white">Make money with Eko Mall</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!" class="text-white">Sell on Eko Mall</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white">Become an affiliate partner</a>
+                  </li>
+                </ul>
+            </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright:
+      <a href="#" class="text-white">Menebraye-Technologies</a>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="card" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  
+  
+    <div class="container py-5">
+     <div class="modal-dialog role="document"></div>
+     <div class="modal-content">
+     <div class="modal-header">  </div>
+     <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Close</button> 
+       <div class="row">
+         <div class="col-lg-7 mx-auto">
+           <div class="bg-white rounded-lg shadow-sm p-5">
+             <ul role="tablist" class="nav bg-light nav-pills rounded-pill nav-fill mb-3">
+               <li class="nav-item">
+                 <a data-toggle="pill" href="#nav-tab-card" class="nav-link active rounded-pill">
+                       Credit Card
+                 </a>
+               </li>
+               <li class="nav-item">
+                 <a data-toggle="pill" href="#nav-tab-bank" class="nav-link rounded-pill">
+                   Bank Transfer
+                 </a>
+               </li>
+             </ul>
+             <div class="tab-content">
+               <div id="nav-tab-card" class="tab-pane fade show active">
+                 <p class="alert alert-success">Total price: ₦<span class="total-cart"></span></p>
+                 <form role="form">
+                   <div class="form-group">
+                     <label for="cardNumber">Card number</label>
+                     <div class="input-group">
+                       <input type="phone" name="cardNumber" placeholder="Your card number" class="form-control" required>
+                     </div>
+                   </div>
+                   <div class="row">
+                     <div class="col-sm-8">
+                       <div class="form-group">
+                         <label><span class="hidden-xs">Expiration</span></label>
+                         <div class="input-group">
+                           <input type="number" placeholder="MM" name="" class="form-control" required>
+                           <input type="number" placeholder="YY" name="" class="form-control" required>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col-sm-4">
+                       <div class="form-group mb-4">
+                         <label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV</label>                                       
+                         <input type="text" required class="form-control">
+                       </div>
+                     </div>
+                   </div>
+                   <button type="button" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirm  </button>
+                 </form>
+               </div>           
+               <div id="nav-tab-bank" class="tab-pane fade">
+                 <h6>Bank account details</h6>
+                 <dl>
+                   <dt>Bank</dt>
+                   <dd> Gurantee Trust Bank</dd>
+                 </dl>
+                 <dl>
+                   <dt>Account number</dt>
+                   <dd>0075877975</dd>
+                 </dl>
+                 <dl>
+                   <dt>Account name</dt>
+                   <dd>Eko Mall Ltd</dd>
+                 </dl>
+               </div>
+             </div>  
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   
+  
+  </body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

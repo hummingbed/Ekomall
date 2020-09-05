@@ -1,0 +1,29 @@
+body {
+	padding-top: 80px;
+  }
+  
+  .show-cart li {
+	display: flex;
+  }
+  .card {
+	margin-bottom: 20px;
+	width: 15rem;
+  }
+  .container{
+	padding-top: 10%;
+  }
+  .card-img-top {
+	width: 200px;
+	height: 250px;
+	align-self: center;
+  }
+
+.card-block{
+	text-align-last: center;
+}
+.add-to-cart{
+	width: 100%;
+}
+.col-sm{
+	padding-right: -9%;
+}
